@@ -1,0 +1,347 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+    /* Vaste kleuren variables */
+
+    --white: #ffffff;
+    --black: #000000;
+    --blauw: #2282f8;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", Segoe UI ,sans-serif;
+    background-color: #F6F6F6;
+}
+
+/* Navigatie */
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--blauw);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+nav h2 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--white);
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+    margin: 10px;
+    transition: .25s ease-in-out;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+nav span {
+    color: var(--white);
+}
+
+/* Home info */
+
+.home-main {
+    width: 90%;
+    margin: auto;
+    display: block;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 1px #BDC1CC;
+}
+
+.home-main h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.home-main p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.home-main a {
+    text-decoration: none;
+    color: var(--blauw);
+    font-weight: 600;
+    transition: .25s ease-in-out;
+}
+
+.home-main a:hover {
+    opacity: 0.5;
+}
+
+.home-main img {
+    width: 500px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    transition: .25s ease-in-out;
+}
+
+.home-main img:hover {
+    border-radius: 3px;
+    width: 650px;
+}
+
+/* Register & Login page */
+
+.register-login-wrapper {
+    width: 100%;
+}
+
+.register-login-form {
+    margin: auto;
+    display: block;
+    width: 600px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px #BDC1CC;
+}
+
+.register-login-form h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-login-form h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-login-form-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: 2px solid #d3d6e2;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .25s ease-in-out;
+}
+
+.register-login-form-field:focus {
+    border: 2px solid var(--blauw);
+}
+
+.register-login-form-btn {
+    border: none;
+    outline: none;
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: var(--blauw);
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    transition: .25s ease-in-out;
+}
+
+.register-login-form-btn:hover {
+    background-color: #1B68C6;
+}
+
+/* Dashboard pagina */
+/* Dashboard pagina */
+/* Dashboard pagina */
+
+.dashboard-welkom {
+    width: 100%;
+    padding: 20px;
+}
+
+.dashboard-welkom h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.dashboard-welkom-naam {
+    font-weight: 600;
+}
+
+.dashboard-welkom-statistiek-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dashboard-welkom-statistiek-box {
+    width: 40%;
+    background-image: none;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(190deg, #2282F8, #4E9BF9);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.dashboard-welkom-statistiek-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.dashboard-welkom-statistiek-box p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+
+.dashboard-claims h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.dashboard-claims-all {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.dashboard-claims-all button {
+    border: none;
+    outline: none;
+    margin: auto;
+    display: block;
+    background-color: var(--blauw);
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.dashboard-claims-all button:hover {
+    background-color: #4E9BF9;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0px 0px 30px 1px #BDC1CC;
+}
+
+th {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+th, td {
+    color: var(--black);
+    padding: 15px;
+}
+
+td {
+    border-bottom: 5px solid #F6F6F6;
+    text-align: center;
+    padding: 20px;
+    max-width: 100px;
+}
+
+.dashboard-claims-table-head {
+    background-color: var(--blauw);
+}
+
+.dashboard-claims-table-head th {
+    color: var(--white);
+}
+
+/* Nieuwe claim pagina */
+/* Nieuwe claim pagina */
+/* Nieuwe claim pagina */
+
+
+.nieuwe-claim-container {
+    margin: auto;
+    display: block;
+    width: 80%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px #BDC1CC;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.nieuwe-claim-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nieuwe-claim-container h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nieuwe-claim-container textarea {
+    width: 100%;
+    height: 200px;
+}
+
+/* Instellingen */
+.settings-profielfoto {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+    border: 1px solid var(--blauw);
+    border-radius: 100%;
+}

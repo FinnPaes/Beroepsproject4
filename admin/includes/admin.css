@@ -1,0 +1,15 @@
+.goedkeuren {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #329932;
+}
+.afwijzen {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #FF1919;
+}
+.exporteerpdf {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #EE7600;
+}
